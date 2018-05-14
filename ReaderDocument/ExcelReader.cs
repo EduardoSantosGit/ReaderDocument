@@ -9,7 +9,7 @@ using DocumentFormat.OpenXml.Spreadsheet;
 
 namespace ReaderDocument
 {
-    public class ExcelReader
+    public class ExcelReader : IReader
     {
 
         public IEnumerable<string> Reader(string path)

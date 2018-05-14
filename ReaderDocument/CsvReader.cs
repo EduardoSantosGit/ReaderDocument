@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ReaderDocument
 {
-    public class CsvReader
+    public class CsvReader : IReader
     {
         public IEnumerable<string> Reader(string path)
         {

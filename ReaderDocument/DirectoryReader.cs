@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ReaderDocument
 {
-    public class DirectoryReader
+    public class DirectoryReader : IReader
     {
 
         public IEnumerable<string> Reader(string path)
