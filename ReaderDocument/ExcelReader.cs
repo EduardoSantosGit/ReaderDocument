@@ -12,10 +12,10 @@ namespace ReaderDocument
     public class ExcelReader
     {
 
-        public IEnumerable<string> Reader(string fileName)
+        public IEnumerable<string> Reader(string path)
         {
             var dataRow = new List<string>();
-            using (FileStream fs = new FileStream(fileName, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
+            using (FileStream fs = new FileStream(path, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
             {
                 using (SpreadsheetDocument doc = SpreadsheetDocument.Open(fs, false))
                 {

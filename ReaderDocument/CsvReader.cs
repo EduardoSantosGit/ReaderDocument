@@ -7,10 +7,10 @@ namespace ReaderDocument
 {
     public class CsvReader
     {
-        public IEnumerable<string> Reader(string fileName)
+        public IEnumerable<string> Reader(string path)
         {
             var listAccessKey = new List<string>();
-            var file = new StreamReader(fileName);
+            var file = new StreamReader(path);
             string line;
 
             while ((line = file.ReadLine()) != null)
