@@ -6,8 +6,6 @@ namespace ReaderDocument
 {
     public interface IReader
     {
-
         IEnumerable<string> Reader(string path);
-
     }
 }

@@ -11,7 +11,6 @@ namespace ReaderDocument
 {
     public class ExcelReader : IReader
     {
-
         public IEnumerable<string> Reader(string path)
         {
             var dataRow = new List<string>();
