@@ -1,6 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Xml;
+using System.Xml.Linq;
+using System.Xml.XPath;
 
 namespace ReaderDocument
 {
@@ -8,7 +12,12 @@ namespace ReaderDocument
     {
         public IEnumerable<string> Reader(string path)
         {
-            throw new NotImplementedException();
+            var xdoc = XDocument.Load(path);
+            var nodes = xdoc.Nodes();
+
+            var elements = nodes.Select(x => x.ToString());
+
+            return elements;
         }
 
     }
