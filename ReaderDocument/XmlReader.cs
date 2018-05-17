@@ -8,7 +8,7 @@ using System.Xml.XPath;
 
 namespace ReaderDocument
 {
-    class XmlReader : IReader
+    public class XmlReader : IReader
     {
         public IEnumerable<string> Reader(string path)
         {
